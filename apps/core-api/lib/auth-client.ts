@@ -1,5 +1,5 @@
 import { createAuthClient } from "better-auth/client";
-import type { auth } from "./auth.ts";
+import type { auth } from "./auth.js";
 import {
   inferAdditionalFields,
   usernameClient,
@@ -7,7 +7,7 @@ import {
   adminClient,
   multiSessionClient,
 } from "better-auth/client/plugins";
-import { ac, roles } from "./permissions";
+import { ac, roles } from "./permissions.js";
 
 export const authClient = createAuthClient({
   baseURL: "http://localhost:3000",
